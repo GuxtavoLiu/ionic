@@ -1,0 +1,33 @@
+<ion-app>
+    <ion-content padding>
+        <img class="img" src="https://uploaddeimagens.com.br/images/002/295/172/original/Tem-em-Casa-logo.png?1566846408">
+
+
+        <ion-item>
+            <ion-label position="floating"> E-mail
+                <ion-text color="dark">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" [(ngModel)]="userEmail"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating"> Senha
+                <ion-text color="dark">*</ion-text>
+            </ion-label>
+            <ion-input required type="password" [(ngModel)]="userSenha"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating"> Confirmar Senha
+                <ion-text color="dark">*</ion-text>
+            </ion-label>
+            <ion-input required type="password" [(ngModel)]="userSenhaConfirm"></ion-input>
+        </ion-item>
+
+
+        <br>
+        <button class="mt btn centro-btn" expand="full" color="secondary" (click)="cadastroUser()">
+      Cadastrar-se
+    </button>
+
+    </ion-content>
+</ion-app>

@@ -1,0 +1,51 @@
+.center{
+    text-align: center;
+}
+.text-custom{ 
+    font-family: "custom"; 
+}
+.icon{
+    float: right;
+}
+.color{
+    color: aqua;
+}
+.text-center{
+    text-align: center;
+}
+.img {
+    max-width:200px;
+    max-height:80px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border{
+    border: 1px;
+}
+.pad{
+    padding-top: 100px;
+}
+
+.btn{
+    color: #fff;
+    border-color: #0cd1e8;
+    background: #0cd1e8;
+    border-radius: 10rem;
+    padding: .75rem 1rem;
+}
+
+.btn:hover{
+    color: black;
+}
+
+ .centro-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}

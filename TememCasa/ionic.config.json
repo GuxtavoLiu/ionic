@@ -1,0 +1,7 @@
+{
+  "name": "TememCasa",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
