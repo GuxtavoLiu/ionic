@@ -11,23 +11,14 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SalvarContatoComponent } from './contato/salvar-contato/salvar-contato.component';
-import { ListarContatoComponent } from './contato/listar-contato/listar-contato.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
-  declarations: [AppComponent, SalvarContatoComponent, ListarContatoComponent],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
     FormsModule,
-    AngularFireModule.initializeApp({
-      apiKey: "AIzaSyDLSZzvbg9k0qI6ETdBMBlXeZ7WTGKxp8g",
-      authDomain: "meuapp-29395.firebaseapp.com",
-      databaseURL: "https://meuapp-29395.firebaseio.com",
-      projectId: "meuapp-29395",
-      storageBucket: "meuapp-29395.appspot.com",
-      messagingSenderId: "621316601397",
-      appId: "1:621316601397:web:294cac78ab669521"
-    }),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule
   ],
   providers: [
